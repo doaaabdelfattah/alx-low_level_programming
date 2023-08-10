@@ -12,8 +12,6 @@ int main(void)
 	 *print function
 	 */
 
-	char string[] = "Programming is like building a multilingual puzzle";
-
-	puts(string);
+	puts(\"Programming is like building a multilingual puzzle);
 	return (0);
 }
