@@ -11,17 +11,17 @@ int main(void)
 	/*
 	*printf function
 	*/
-	char c;
+	char character;
 	int i;
 	long int q;
 	long long int w;
-	float f;
+	float fnumber;
 
-	printf("Size of a char: %c byte(s)\n", sizeof(c));
+	printf("Size of a char: %c byte(s)\n", sizeof(character));
 	printf("Size of an int: %d byte(s)\n", sizeof(i));
 	printf("Size of a long int: %d byte(s)\n", sizeof(q));
 	printf("Size of a long long int: %d byte(s)\n", sizeof(w));
-	printf("Size of a float: %f byte(s)\n", sizeof(f));
+	printf("Size of a float: %f byte(s)\n", sizeof(fnumber));
 	return (0);
 }
 
