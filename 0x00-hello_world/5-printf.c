@@ -1,16 +1,14 @@
 #include <stdio.h>
 
-/**
- * main - Entry point
- * 
- * Description: 'the program's description'
- * @parameter: describe the parameter
- * 
- * Return: Always 0 (Success)
- */
+/*
+ * first c program
+ **/
 
 int main(void)
 {
+	/*
+	 *print function
+	 * /
 	printf("with proper grammar, but the outcome is a piece of art,\n");
 	return (0);
 }
