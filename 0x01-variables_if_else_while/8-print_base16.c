@@ -12,9 +12,9 @@ int main(void)
 {
 	int hex;
 
-        for (hex = 0 ; hex <= 15 ; hex++)
+        for (hex = 0 ; hex <= 9 ; hex++)
         {
-                putchar(hex);
+                putchar('0' + hex);
         }
 	putchar('\n');
 	return (0);
