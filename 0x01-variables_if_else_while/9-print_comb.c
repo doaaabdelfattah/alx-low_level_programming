@@ -15,7 +15,8 @@ int main(void)
 	for (hex = 0 ; hex <= 9 ; hex++)
 	{
 		putchar('0' + hex);
-		putchar(44 );
+		putchar(44);
+		putchar(31);
 	}
 
 	putchar('\n');
