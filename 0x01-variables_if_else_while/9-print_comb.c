@@ -18,7 +18,7 @@ int main(void)
 		if (hex < 9 )
 		{
 			putchar(44);
-			putchar(31);
+			putchar(32);
 		}
 	}
 
