@@ -12,10 +12,10 @@ int main(void)
 {
 	int hex;
 
-        for (hex = 0 ; hex <= 9 ; hex++)
-        {
-                putchar('0' + hex);
-        }
+	for (hex = 0 ; hex <= 9 ; hex++)
+	{
+		putchar('0' + hex);
+	}
 
 	for (hex = 97 ; hex <= 102 ; hex++)
 	{
