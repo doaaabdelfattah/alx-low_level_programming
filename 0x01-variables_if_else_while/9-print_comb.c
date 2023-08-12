@@ -15,7 +15,7 @@ int main(void)
 	for (hex = 0 ; hex <= 9 ; hex++)
 	{
 		putchar('0' + hex);
-		if (hex < 9 )
+		if (hex < 9)
 		{
 			putchar(44);
 			putchar(32);
