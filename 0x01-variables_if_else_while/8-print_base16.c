@@ -16,7 +16,7 @@ int main(void)
         {
                 putchar('0' + hex);
         }
-	char c
+	char c;
 
 	for (c = 'a' ; c <='f' ; c++)
 	{
