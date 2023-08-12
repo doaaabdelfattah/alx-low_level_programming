@@ -16,13 +16,18 @@ int main(void)
 	{
 		for (num2 = 1  ; num2 <= 9 ; num2++)
 		{
+			if (num1 != num2 && num1 < 9)
+			{
+
 			putchar('0' + num1);
 			putchar('0' + num2);
-			if (num1 < 9)
-				{
-					putchar(44);
-					putchar(32);
-				}
+			putchar(44);
+			putchar(32);
+			}
+			else
+			{
+				continue;
+			}
 		}
 	}
 
