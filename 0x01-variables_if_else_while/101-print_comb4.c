@@ -21,7 +21,7 @@ int main(void)
 			putchar('0' + num1);
 			putchar('0' + num2);
 			putchar('0' + num3);
-			if (num1 < 8 && num2 <9 && num3 < 10)
+			if (num1 < 7 || num2 < 8 || num3 < 9)
 			{
 				putchar(44);
 				putchar(32);
