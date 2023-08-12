@@ -16,7 +16,7 @@ int main(void)
 	{
 		if (c == 'e' || c == 'q')
 		{
-			exit(EXIT_SUCCESS);
+			putchar(c++);
 		}
 		else
 		{
