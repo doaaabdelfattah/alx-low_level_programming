@@ -10,20 +10,19 @@
  */
 int main(void)
 {
-	int hex;
+	int num1, num2;
 
-	for (hex = 0 ; hex <= 9 ; hex++)
+	for (num1 = 0 ; num1 <= 9 ; num1++)
 	{
-		putchar('0' + hex);
-		for (hex = 1 ; hex <= 9 ; hex++)
+		for (hex =  ; hex <= 9 ; num2++)
 		{
-			putchar('0' + hex);
-		}
-		if (hex < 9)
-		{
-			putchar(44);
-			putchar(32);
-		}
+			putchar('0' + num1);
+			putchar('0' + num2;
+			if (num1 < 9)
+				{
+					putchar(44);
+					putchar(32);
+				}
 	}
 
 	putchar('\n');
