@@ -16,7 +16,7 @@ int main(void)
 	{
 		for (num2 = num1 + 1  ; num2 <= 9 ; num2++)
 		{
-			for(num3 = num2 + 1; num3 <=9 ; num3++)
+			for (num3 = num2 + 1; num3 <= 9 ; num3++)
 			{
 			putchar('0' + num1);
 			putchar('0' + num2);
@@ -28,7 +28,7 @@ int main(void)
 			}
 			}
 		}
-	}	
+	}
 
 	putchar('\n');
 	return (0);
