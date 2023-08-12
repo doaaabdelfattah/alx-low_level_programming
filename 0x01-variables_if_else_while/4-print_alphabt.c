@@ -16,7 +16,7 @@ int main(void)
 	{
 		if (c == 'e' || c == 'q')
 		{
-			return;
+			exit(EXIT_SUCCESS);
 		}
 		else
 		{
