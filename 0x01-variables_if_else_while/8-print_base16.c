@@ -19,7 +19,7 @@ int main(void)
 
 	for (hex = 97 ; hex <= 102 ; hex++)
 	{
-		putchar('0' + hex);
+		putchar(hex);
 	}
 	putchar('\n');
 	return (0);
