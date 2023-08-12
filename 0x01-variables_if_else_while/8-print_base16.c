@@ -10,9 +10,9 @@
  */
 int main(void)
 {
-	char hex;
+	int hex;
 
-        for (hex ='NULL'; hex <= 'f' ; hex++)
+        for (hex = 0 ; hex <= '15' ; hex++)
         {
                 putchar(hex);
         }
