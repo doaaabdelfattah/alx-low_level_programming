@@ -16,11 +16,10 @@ int main(void)
         {
                 putchar('0' + hex);
         }
-	char c;
 
-	for (c = 'a' ; c <='f' ; c++)
+	for (hex = 97 ; hex <= 102 ; hex++)
 	{
-		putchar(c);
+		putchar('0' + hex);
 	}
 	putchar('\n');
 	return (0);
