@@ -9,7 +9,10 @@
  */
 int main(void)
 {
-	_putchar("_");
-	_putchar("p");
+	char arr[] = "_putchar";
+	for (int i = 0; i < 8 ; i++)
+	_putchar(arr[i]);
+	_putchar('\n');
+	return 0;
 
 }
