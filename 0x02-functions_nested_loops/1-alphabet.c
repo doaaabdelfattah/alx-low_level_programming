@@ -3,7 +3,7 @@
 /**
  *main - starting point
  *
- *Description: print_alphabet function print for all letters
+ *print_alphabet: function print for all letters
  *
  */
 void print_alphabet(void)
