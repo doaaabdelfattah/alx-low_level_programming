@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- *print_alphabet - function print for all letters
+ *print_alphabet_x10 - function print for all letters 10 times
  */
 void print_alphabet_x10(void)
 	{
