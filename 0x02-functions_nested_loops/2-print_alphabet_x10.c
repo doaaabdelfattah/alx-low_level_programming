@@ -5,9 +5,9 @@
  */
 void print_alphabet_x10(void)
 	{
-	int count;
+	int i;
 
-	for (count = 0; i < 10; i++)
+	for (i = 0; i < 10; i++)
 	{
 		char c = 'a';
 
