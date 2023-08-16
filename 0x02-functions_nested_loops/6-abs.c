@@ -4,8 +4,12 @@
  */
 int _abs(int a)
 {
-	int b;
-	b = 0 - a;
-	return b;
+	if (a > 0)
+	return a;
+	if (a < 0)
+	{
+	a = 0 - a;
+	return a;
+	}
 }
 
