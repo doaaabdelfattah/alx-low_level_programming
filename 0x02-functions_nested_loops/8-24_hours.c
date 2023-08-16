@@ -14,12 +14,13 @@ for (num3 = 0; num3 <= 5; num3++)
 {
 for (num4 = 0; num4 <= 9; num4++)
 {
-putchar('0' + num1);
-putchar('0' + num2);
-putchar(58);
-putchar('0' + num3);
-putchar('0' + num4);
-putchar('\n');
+_putchar('0' + num1);
+_putchar('0' + num2);
+_putchar(58);
+_putchar('0' + num3);
+_putchar('0' + num4);
+_putchar('\n');
+}
 }
 }
 }
