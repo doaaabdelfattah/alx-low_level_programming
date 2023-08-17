@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- *print_square -  prints a square
- *&size: the size of the square
+ *print_triangle -  prints a triangle of hashes
+ *&size: the size of the triangle
  *
  */
 
