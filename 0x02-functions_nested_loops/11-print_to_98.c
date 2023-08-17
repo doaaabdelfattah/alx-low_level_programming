@@ -19,7 +19,7 @@ else
 {
 for(; n>= 98; n--)
 {
-Printf("%d, ",n);
+printf("%d, ",n);
 }
 }
 }
