@@ -13,12 +13,13 @@ void times_table(void)
 	int k = n * i;
 	
 	/* If the number is one digit*/
-	if (k >= 9)
+	if (k <= 9)
 	{
 		/* No spaces on the first column*/
 		if (i == 0)
 		_putchar(k + '0');
 		/* on other columns */
+		
 		else
 		{	
 		_putchar(32);
