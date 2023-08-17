@@ -1,18 +1,18 @@
 #include "main.h"
 /**
- *time_table -  prints the 9 times table, starting with 0.
+ *times_table -  prints the 9 times table, starting with 0.
  *
  */
 void times_table(void)
 {
-	int n , i;
+	int n, i;
 
 	for (n = 0; n <= 9; n++)
 	{
 	for (i = 0; i <= 9; i++)
 	{
 	int k = n * i;
-	
+
 	/* If the number is one digit*/
 	if (k <= 9)
 	{
@@ -21,7 +21,7 @@ void times_table(void)
 		_putchar(k + '0');
 		/* on other columns */
 		else
-		{	
+		{
 		_putchar(32);
 		_putchar(32);
 		_putchar(k + '0');
