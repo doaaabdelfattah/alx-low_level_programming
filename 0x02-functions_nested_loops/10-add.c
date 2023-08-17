@@ -1,5 +1,5 @@
 #include "main.h"
-/*
+/**
  *add - Function addition of two integer
  *@a: the first number
  *@b: the second number
