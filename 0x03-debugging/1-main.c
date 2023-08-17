@@ -17,6 +17,5 @@ putchar(i);
 }
 /* i never increments so it will always less than 10*/
 printf("Infinite loop avoided! \\o/\n");
-
 return (0);
 }
