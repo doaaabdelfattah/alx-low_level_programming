@@ -2,7 +2,7 @@
 
 /**
  *print_triangle -  prints a triangle of hashes
- *&size: the size of the triangle
+ *@size: the size of the triangle
  *
  */
 
