@@ -1,11 +1,12 @@
 #include "main.h"
 /**
- *
+ *time_table -  prints the 9 times table, starting with 0.
  *
  */
 void times_table(void)
 {
-	int n,i;
+	int n , i;
+
 	for (n = 0; n <= 9; n++)
 	{
 	for (i = 0; i <= 9; i++)
@@ -19,7 +20,6 @@ void times_table(void)
 		if (i == 0)
 		_putchar(k + '0');
 		/* on other columns */
-		
 		else
 		{	
 		_putchar(32);
@@ -28,14 +28,14 @@ void times_table(void)
 		}
 	}
 	/* if the number 2 digits */
-	else 
+	else
 	{
 	_putchar(32);
-	_putchar((k/10) + '0');
+	_putchar((k / 10) + '0');
 	_putchar((k % 10) + '0');
 	}
 	/* comma after each number except last number */
-	if ( i < 9)
+	if (i < 9)
 	_putchar(',');
 	}
 	/*new line*/
