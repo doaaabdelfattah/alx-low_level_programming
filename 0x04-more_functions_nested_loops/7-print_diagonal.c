@@ -9,7 +9,7 @@ void print_diagonal(int n)
 	int count;
 
 	for (count = 0; count < n; count++)
-		_putchar('');
-	_putchar('\');
+		_putchar(32);
+	_putchar(47);
 	_putchar('\n');
 }
