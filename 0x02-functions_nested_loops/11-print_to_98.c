@@ -26,7 +26,7 @@ _putchar(' ');
 }
 }
 if (n > 98)
-for (; n >= 98; n--)
+{for (; n >= 98; n--)
 {
 _putchar((n / 10) + '0');
 _putchar((n % 10) + '0');
@@ -34,4 +34,4 @@ _putchar(',');
 _putchar(' ');
 }
 }
-
+}
