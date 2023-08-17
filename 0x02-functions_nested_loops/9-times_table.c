@@ -17,7 +17,7 @@ void times_table(void)
 	{
 		/* No spaces on the first column*/
 		if (i == 0)
-		_putchar(k + '0')
+		_putchar(k + '0');
 		/* on other columns */
 		else
 		{	
