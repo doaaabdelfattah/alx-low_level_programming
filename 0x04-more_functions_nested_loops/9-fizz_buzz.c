@@ -1,10 +1,7 @@
-#include "main.h"
 #include <stdio.h>
 
 /**
  *main - starting point
- *
- *Description: main function for all other functions
  *
  *Return: 0 if program success
  */
