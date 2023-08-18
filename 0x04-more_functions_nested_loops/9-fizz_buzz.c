@@ -2,7 +2,11 @@
 #include <stdio.h>
 
 /**
- * fizzBuzz
+ *main - starting point
+ *
+ *Description: main function for all other functions
+ *
+ *Return: 0 if program success
  */
 
 int main(void)
@@ -16,7 +20,7 @@ int main(void)
 		else if (i % 5 == 0)
 		printf("Buzz");
 		else if (i % 3 == 0)
-		printf("Fizz");	
+		printf("Fizz");
 		else
 		printf("%d", i);
 
@@ -24,4 +28,4 @@ int main(void)
 	}
 	printf("\n");
 	return (0);
-}	
+}
