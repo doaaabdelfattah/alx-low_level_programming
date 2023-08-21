@@ -30,12 +30,12 @@ void puts_half(char *str)
     {
         if (len % 2 == 0)
         {
-            _putchar(str[(len / 2) + i]);
+            _putchar(str[(len - 1 / 2) + i]);
             i++;
         }
         else
         {
-            _putchar(str[(len - 1 / 2) + i]);
+            _putchar(str[(len / 2) + i]);
             i++;
         }
     }
