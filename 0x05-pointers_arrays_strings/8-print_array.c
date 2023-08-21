@@ -35,5 +35,4 @@ void print_array(int *a, int n)
             printf(", ");
         }
     }
-    _putchar('\n');
 }
