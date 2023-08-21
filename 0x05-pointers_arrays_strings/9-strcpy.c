@@ -18,10 +18,11 @@ int _strlen(char *s)
 }
 char *_strcpy(char *dest, char *src)
 {
-    int i, len = _strlen(src);
-    for (i = 0; i <= len; i++)
-    {
-        dest[i] = src[i];
-    }
-    return dest;
+	int i, len = _strlen(src);
+
+for (i = 0; i <= len; i++)
+{
+	dest[i] = src[i];
+}
+return (dest);
 }
