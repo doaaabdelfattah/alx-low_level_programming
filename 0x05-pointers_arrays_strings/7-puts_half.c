@@ -28,14 +28,14 @@ void puts_half(char *str)
 
     while (i < len / 2)
     {
-        if (len % 3 == 0)
+        if (len % 2 == 0)
         {
-            _putchar(str[(len - 1 / 2) + i]);
+            _putchar(str[(len / 2) + i]);
             i++;
         }
         else
         {
-            _putchar(str[(len / 2) + i]);
+            _putchar(str[(len - 1 / 2) + i]);
             i++;
         }
     }
