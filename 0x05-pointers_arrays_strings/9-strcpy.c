@@ -16,6 +16,14 @@ int _strlen(char *s)
 	}
 	return (i);
 }
+/**
+ * _strcpy - function that copy string
+ * @dest : pointer to array
+ * @src : pointer to array
+ *
+ * Return: pointer to the copied array
+ */
+
 char *_strcpy(char *dest, char *src)
 {
 	int i, len = _strlen(src);
