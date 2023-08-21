@@ -34,6 +34,6 @@ count = (s[i] - 48) + count * 10;
 if (s[i - 1] == '-')
 count = -count;
 }
-return (count);
 }
+return (count);
 }
