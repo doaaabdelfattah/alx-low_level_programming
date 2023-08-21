@@ -19,9 +19,9 @@ int _strlen(char *s)
 char *_strcpy(char *dest, char *src)
 {
     int i, len = _strlen(src);
-    for (i =0; i <= len; i++)
+    for (i = 0; i <= len; i++)
     {
         src[i] = dest[i];
     }
-    return dest;
+    return *dest;
 }
