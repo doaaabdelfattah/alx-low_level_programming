@@ -19,14 +19,20 @@ int _strlen(char *s)
 
 int _atoi(char *s)
 {
-    int count, i, len = _strlen(s);
+    int count, i, sign, len = _strlen(s);
     count = 0;
     for (i = 0; i < len; i++)
     {
+        if(s[i] = '-')
+        sign = -1;
+
         if (s[i]>= '0' && s[i]<= '9')
         {
         count = (s[i] - 48) + count *10;
         }
+
+        if (sign == -1)
+        count = - count;
     }
     return count;
 }
