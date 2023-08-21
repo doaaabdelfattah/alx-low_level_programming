@@ -24,7 +24,7 @@ int _atoi(char *s)
     for (i = 0; i < len; i++)
     {
        count = s[i] + count;
-        return count;
     }
+    return count;
 }
 
