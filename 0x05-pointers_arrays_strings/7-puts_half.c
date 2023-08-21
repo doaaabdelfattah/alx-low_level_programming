@@ -24,10 +24,11 @@ int _strlen(char *s)
 
 void puts_half(char *str)
 {
-	int i = 0, len = _strlen(str);
+	int i , len = _strlen(str);
 
 	if (len % 2 == 0)
 	{
+		i = 0;
 		while (i < len / 2)
 		{
 			_putchar(str[(len / 2) + i]);
@@ -36,7 +37,8 @@ void puts_half(char *str)
 	}
 	else
 	{
-		while (i < (len / 2))
+		i = 1;
+		while (i < (len -1) / 2)
 		{
 			_putchar(str[((len - 1) / 2) + i]);
 			i++;
