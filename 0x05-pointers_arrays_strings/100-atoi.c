@@ -23,7 +23,7 @@ int _atoi(char *s)
     count = 0;
     for (i = 0; i < len; i++)
     {
-       count = int s[i] + count;
+       count = s[i] + count;
         return count;
     }
 }
