@@ -19,7 +19,7 @@ int _strlen(char *s)
 
 int _atoi(char *s)
 {
-    int count, i, sign, len = _strlen(s);
+    int count, i, len = _strlen(s);
     count = 0;
     for (i = 0; i < len; i++)
     {
@@ -32,5 +32,6 @@ int _atoi(char *s)
         count = - count;
     }
     return count;
+}
 }
 
