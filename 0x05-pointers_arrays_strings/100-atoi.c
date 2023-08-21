@@ -23,15 +23,12 @@ int _atoi(char *s)
     count = 0;
     for (i = 0; i < len; i++)
     {
-        if(s[i] == '-')
-        sign = -1;
+
 
         if (s[i]>= '0' && s[i]<= '9')
         {
         count = (s[i] - 48) + count *10;
-        }
-
-        if (sign == -1)
+        if(s[i-1] == '-')
         count = - count;
     }
     return count;
