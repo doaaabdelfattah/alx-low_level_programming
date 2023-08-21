@@ -26,10 +26,22 @@ void puts_half(char *str)
 {
 	int i = 0, len = _strlen(str);
 
-	while (i < len / 2)
+	if (len % 2 == 0)
 	{
-		_putchar(str[(len / 2) + i]);
-		i++;
+		while (i < len / 2)
+		{
+			_putchar(str[(len / 2) + i]);
+			i++;
+		}
 	}
-	_putchar('\n');
+	else
+	{
+		while (i < len - 1 / 2)
+		{
+			_putchar(str[(len / 2) + i]);
+			i++;
+		}
+	}
+}
+_putchar('\n');
 }
