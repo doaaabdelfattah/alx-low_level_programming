@@ -23,7 +23,11 @@ int _atoi(char *s)
     count = 0;
     for (i = 0; i < len; i++)
     {
-       count = (s[i] - 48) + count *10;
+        if (s[i]> '0' && s[i]< '9')
+        {
+        count = (s[i] - 48) + count *10;
+        }
+
     }
     return count;
 }
