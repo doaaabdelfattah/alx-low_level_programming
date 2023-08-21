@@ -33,6 +33,8 @@ if (s[i] >= '0' && s[i] <= '9')
 count = (s[i] - 48) + count * 10;
 if (s[i - 1] == '-')
 count = -count;
+if (count > 0)
+break;
 }
 }
 return (count);
