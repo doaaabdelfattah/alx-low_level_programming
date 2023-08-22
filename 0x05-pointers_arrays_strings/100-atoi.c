@@ -24,19 +24,20 @@ return (i);
  */
 int _atoi(char *s)
 {
-int count, i,sign, len = _strlen(s);
+int count, i, sign, len = _strlen(s);
 count = 0;
 sign = 1;
 
 for (i = 0; i < len; i++)
 {
-if (s[i] >= '0' && s[i] <= '9')
+if (s[i] >= '0' && s[i] <= '9' && s[i] != 32)
 {
-count = (s[i] - 48) + count * 10;
 if (s[i - 1] == '-')
 sign = -1;
-}
+
+count = (s[i] - 48) + count * 10;
 
 }
-return (count * sign);
+}
+return (count *sign);
 }
