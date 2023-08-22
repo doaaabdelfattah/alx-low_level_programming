@@ -36,8 +36,6 @@ for (i = 0; i < len; i++)
         sign = -1;
         count = (s[i] - 48) + count * 10;
     }
-    // if (s[i] == 32)
-    // break;
 }
 return (count *sign);
 }
