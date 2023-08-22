@@ -30,14 +30,14 @@ sign = 1;
 
 for (i = 0; i < len; i++)
 {
-if (s[i] >= '0' && s[i] <= '9' && s[i] != 32)
-{
-if (s[i - 1] == '-')
-sign = -1;
-
-count = (s[i] - 48) + count * 10;
-
-}
+    if (s[i] >= '0' && s[i] <= '9')
+    {
+        if (s[i - 1] == '-')
+        sign = -1;
+        count = (s[i] - 48) + count * 10;
+    }
+    if (s[i] = 32)
+    break;
 }
 return (count *sign);
 }
