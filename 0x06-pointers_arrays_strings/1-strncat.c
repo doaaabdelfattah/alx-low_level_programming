@@ -19,25 +19,22 @@ int _strlen(char *s)
 }
 
 /**
- *_strcat - function that concatenates two strings.
+ * _strcat - function that concatenates two strings.
  *@dest: the first pointer
  *@src: string to be copied
- *
- * Return: pointer to string
  */
 
-char *_strcat(char *dest, char *src)
+char *_strncat(char *dest, char *src, int n)
 {
 int destlen =  _strlen(dest);
-int srclen =  _strlen(src);
+// int srclen =  _strlen(src);
 int i;
 
 
-for (i = 0; i <= srclen; i++)
+for (i = 0; i <= n; i++)
 {
 dest[destlen + i] = src[i];
 }
-dest[destlen + i] = '\0';
 return (dest);
 
 }
