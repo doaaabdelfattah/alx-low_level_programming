@@ -1,6 +1,5 @@
 #include "main.h"
 
-
 /**
  * _strlen - function that returns the length of a string
  * @s : string
@@ -29,13 +28,12 @@ char *_strcat(char *dest, char *src)
 {
     int destlen =  _strlen(dest);
     int srclen =  _strlen(src);
-    int i, j;
+    int i;
 
 
     for (i = 0; i <= srclen; i++)
     {
         dest[destlen + i]= src[i];
-        i++;
     }
     dest[destlen + i]='\0';
     return dest;
