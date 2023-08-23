@@ -35,7 +35,7 @@ for (i = 0; i < n  && src[i] != '\0' ; i++)
 {
 	dest[i] = src[i];
 }
-if (n > srclen)
+if (n > srclen + 1)
 dest[i] = '\0';
 
 return (dest);
