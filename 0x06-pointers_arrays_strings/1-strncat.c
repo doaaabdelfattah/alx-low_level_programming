@@ -19,7 +19,7 @@ int _strlen(char *s)
 }
 
 /**
- *_strcat - function that concatenates two strings.
+ *_strncat - function that concatenates two strings.
  *@dest: the first pointer
  *@src: string to be copied
  *@n: number of byte
