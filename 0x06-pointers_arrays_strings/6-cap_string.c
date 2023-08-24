@@ -2,12 +2,13 @@
 /**
  * cap_string - capitalizes all words of a string.
  *@s: array of string
+ *
  *Return: array with uppercase
  */
 
 char *cap_string(char *s)
 {
-	int i = 0;
+	int i;
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
@@ -16,18 +17,18 @@ char *cap_string(char *s)
 			if (s[i] >= 'a' && s[i] <= 'z')
 			{
 				s[i] = s[i] - 32;
+			}
+			continue;
+		}
+		if (s[i-1] == ' ' || s[i-1] == '\t' || s[i-1] == '\n' ||
+		s[i-1] == ',' || s[i-1] == '.' || s[i-1] == ';' || s[i-1] == '?' || s[i-1] == '!' ||
+		s[i-1] == '"' || s[i-1] == '(' || s[i-1] == ')' || s[i-1] == '{' || s[i-1] == '}')
+		{
+			if (s[i] >= 'a' && s[i] <= 'z')
+			{
+				s[i] = s[i] - 32;
 				continue;
 			}
-		}
-			if (s[i] == ' ' || s[i] == '\t' || s[i] == '\n' ||
-			s[i] == ',' || s[i] == '.' || s[i] == ';' || s[i] == '?' || s[i] == '!' ||
-			s[i] == '"' || s[i] == '(' || s[i] == ')' || s[i] == '{' || s[i] == '}')
-		{
-			i++;
-				if (s[i] >= 'a' && s[i] <= 'z')
-				{
-					s[i] = s[i] - 32;
-				}
 		}
 	}
 	return (s);
