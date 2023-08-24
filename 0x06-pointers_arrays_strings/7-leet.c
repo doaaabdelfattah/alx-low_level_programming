@@ -15,7 +15,7 @@ for (i = 0; s[i] != '\0'; i++)
 for (j = 0; j < 5; j++)
 if (s[i] == alph[j] || s[i] == alph[j] - 32)
 {
-s[i] = num[j];
+s[i] = num[j] + '0';
 }
 }
 return (s);
