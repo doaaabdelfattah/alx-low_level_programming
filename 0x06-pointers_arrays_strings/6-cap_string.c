@@ -9,14 +9,13 @@ char *cap_string(char *s)
 {
 	int i = 0;
 
-	while (s[i] != '\0')
+	for (i = 0; s[i] != '\0'; i++ )
 	{
 		if (i == 0)
 		{
 			if (s[i] >= 'a' && s[i] <= 'z')
 			{
 				s[i] = s[i] - 32;
-				i++;
 				continue;
 			}
 		}
@@ -25,10 +24,9 @@ char *cap_string(char *s)
 			s[i] == '"' || s[i] == '(' || s[i] == ')' || s[i] == '{' || s[i] == '}')
 		{
 			i++;
-			if (s[i] >= 'a' && s[i] <= 'z')
+				if (s[i] >= 'a' && s[i] <= 'z')
 				{
 					s[i] = s[i] - 32;
-					continue;
 				}
 		}
 	}
