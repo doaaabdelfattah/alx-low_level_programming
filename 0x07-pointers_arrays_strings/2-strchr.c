@@ -15,5 +15,6 @@ int i;
 			return (s + i);
 		}
 	}
+	if ((s + i) != '\0')
 	return (NULL);
 }
