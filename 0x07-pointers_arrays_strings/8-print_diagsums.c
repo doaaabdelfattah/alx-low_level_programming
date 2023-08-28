@@ -1,8 +1,9 @@
 #include <stdio.h>
 #include "main.h"
 /**
- *print_chessboard -  function that prints the chessboard.
+ *print_diagsums - prints the sum of the two diagonals.
  *@a: parameter
+ *@size: size of array
  *
  */
 
