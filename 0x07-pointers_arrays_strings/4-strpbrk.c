@@ -20,6 +20,6 @@ break;
 }
 }
 }
-return (s + i);
+return (NULL);
 }
 
