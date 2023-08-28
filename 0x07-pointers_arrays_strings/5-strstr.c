@@ -18,8 +18,6 @@ if (haystack[i + j] == needle[j])
 if (needle[j] == '\0')
 return (haystack + i);
 }
-else
-break;
 }
 }
 return (NULL);
