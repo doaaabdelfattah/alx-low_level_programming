@@ -13,12 +13,12 @@ unsigned int len = 0;
 
 while (s[i] != '\0')
 {
-    while (accept[j] != '\0' && s[i] != accept[j])
-    {
-        len++;
-        j++;
-    }
-    i++;
+while (accept[j] != '\0' && s[i] != accept[j])
+{
+len++;
+j++;
+}
+i++;
 }
 return (len);
 }
