@@ -26,14 +26,3 @@ return (len);
 return (len);
 }
 
-// while (s[i] != '\0' && s[i] != accept[j])
-// {
-// while (accept[j] != '\0' && s[i] != accept[j])
-// {
-// len++;
-// break;
-// }
-// i++;
-// }
-// return (len);
-// }
