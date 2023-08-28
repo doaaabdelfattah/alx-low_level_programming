@@ -16,5 +16,5 @@ int i;
 		}
 		continue;
 	}
-	return (0);
+	return (s);
 }
