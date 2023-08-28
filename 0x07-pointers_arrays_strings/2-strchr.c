@@ -4,7 +4,6 @@
  *@s: string
  *@c: character to be located
  *Return: pointer to character
- *
  */
 char *_strchr(char *s, char c)
 {
@@ -14,6 +13,7 @@ int i;
 		if (s[i] == c)
 		{
 			return (s + i);
+			break;
 		}
 	}
 	return (0);
