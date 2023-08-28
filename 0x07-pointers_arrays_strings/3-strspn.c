@@ -17,6 +17,7 @@ while (accept[j] != '\0' && s[i] != accept[j])
 {
 len++;
 j++;
+break;
 }
 i++;
 }
