@@ -12,9 +12,14 @@ int i;
 	{
 		if (s[i] == c)
 		{
-			return (s + i);
+			s = s + i ;
+			break;
 		}
-		continue;
+		else
+		{
+			s = NULL;
+		}
+
 	}
 	return (s);
 }
