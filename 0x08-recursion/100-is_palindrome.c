@@ -27,7 +27,7 @@ return (1 + _strlen(s + 1));
     int n = _strlen(s);
     if (i < n /2)
     {
-        if (s[i] == s[n - 1 - i])
+        if (s[i] != s[n - 1 - i])
         return (_check_palind(s, i++));
     }
     return (1);
