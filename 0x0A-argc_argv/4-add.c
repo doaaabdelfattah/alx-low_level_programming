@@ -18,7 +18,7 @@ printf("0\n");
 
 else
 {
-for (i = 1; i < argc - 1; i++)
+for (i = 1; i <= argc - 1; i++)
 {
 if (atoi(argv[i]) > '9' && atoi(argv[i]) < '0')
 {
