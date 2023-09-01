@@ -10,9 +10,9 @@ int _check_prime(int n, int i)
             return (_check_prime(n, i + 1));
         }
         else
-        return (1);
+            return (0);
     }
-    return (0);
+    return (1);
 }
 /**
  * is_prime_number - check if the number is prime
