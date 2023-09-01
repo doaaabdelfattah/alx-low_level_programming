@@ -9,6 +9,7 @@ int _check_prime(int n, int i);
 
 int _check_prime(int n, int i)
 {
+    /* iterate over n /2 */
 if (i <= n / 2)
 {
 if (n % i != 0)
@@ -29,6 +30,7 @@ return (1);
 int is_prime_number(int n)
 {
 int i = 2;
+/* 0, 1 & negative numbers aren't prime number */
 if (n <= 1)
 return (0);
 
