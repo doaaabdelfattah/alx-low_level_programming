@@ -25,13 +25,13 @@ return (1 + _strlen(s + 1));
 */
 int _check_palind(char *s, int len, int i)
 {
-if (i <= len /2)
+if (i <= len / 2)
 {
 if (s[i] == s[len - i - 1])
 _check_palind(s, len, i + 1);
 }
 
-return (0);
+return (1);
 
 }
 
