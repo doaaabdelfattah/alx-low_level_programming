@@ -4,7 +4,6 @@
 #include <string.h>
 int _isdigit(int c);
 
-
 /**
  *_isdigit - function to check for digit character
  *@c: The number to be check
