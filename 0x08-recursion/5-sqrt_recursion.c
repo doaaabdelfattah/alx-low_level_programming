@@ -21,7 +21,6 @@ return (_root(n, r + 1));
  *Return: the natural square
  */
 
-
 int _sqrt_recursion(int n)
 {
 int r = 0;
