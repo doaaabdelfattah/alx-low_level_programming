@@ -29,8 +29,6 @@ int main(int argc, char *argv[])
             {
                 count = count + atoi(argv[i]);
             }
-            if (atoi(argv[i]) > 0)
-            break;
         }
         printf("%d\n", count);
     }
