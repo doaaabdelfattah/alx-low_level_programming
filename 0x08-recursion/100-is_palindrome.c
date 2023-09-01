@@ -1,5 +1,5 @@
 #include "main.h"
-int _check_palind(char *s,int len, int i);
+int _check_palind(char *s, int len, int i);
 int _strlen(char *s);
 
 /**
@@ -20,18 +20,17 @@ return (1 + _strlen(s + 1));
  * _check_palind - check if string is palindrome.
  * @s: pinter to string
  * @i: count
+ * *@len: length of string
  *Return: 1 if string is palindrome otherwise 0.
 */
-int _check_palind(char *s,int len , int i)
+int _check_palind(char *s, int len, int i)
 {
-if( i <= len /2)
-{
-if (s[i] != s[len - i - 1])
-return (0);
+if (s[i] == s[len / 2])
+return (1);
 if (s[i] == s[len - i - 1])
 return (_check_palind(s, len, i++));
-}
-return (1);
+
+return (0);
 }
 
 /**
@@ -44,8 +43,9 @@ int is_palindrome(char *s)
 {
 int i = 0;
 int len = _strlen(s);
+
 if (len == 0)
 return (1);
 
-return (_check_palind(s,len, i));
+return (_check_palind(s, len, i));
 }
