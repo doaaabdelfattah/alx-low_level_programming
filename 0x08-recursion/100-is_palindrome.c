@@ -24,11 +24,11 @@ return (1 + _strlen(s + 1));
 */
 int _check_palind(char *s, int i)
 {
-int n = _strlen(s) - 1;
-if (n == 0)
+int len = _strlen(s);
+if (len == 0)
 return (1);
 
-if (s[i] == s[n - i])
+if (s[i] == s[len - i - 1])
 return (_check_palind(s, i++));
 return (0);
 }
