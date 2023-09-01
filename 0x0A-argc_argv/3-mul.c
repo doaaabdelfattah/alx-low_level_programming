@@ -20,6 +20,6 @@ else
 int n1 = atoi(argv[1]);
 int n2 = atoi(argv[2]);
 printf("%i\n", n1 * n2);
-}
 return (0);
+}
 }
