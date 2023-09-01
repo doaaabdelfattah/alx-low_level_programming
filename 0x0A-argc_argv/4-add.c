@@ -28,7 +28,7 @@ return (1);
 else
 count = count + atoi(argv[i]);
 }
-printf("%i\n", count);
+printf("%d\n", count);
 }
 return (0);
 }
