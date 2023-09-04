@@ -28,14 +28,14 @@ int _strlen(char *s)
 char *_strdup(char *str)
 {
 	char *ptr;
-	unsigned int i;
-	unsigned int size;
+	int i;
+	int size;
 
 	if (str == NULL)
 	{
 		return (NULL);
 	}
-	
+
 	for (size = 0; str[size] != '\0'; size++)
 		continue;
 	ptr = (char *)malloc(sizeof(int) * size);
