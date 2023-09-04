@@ -30,10 +30,9 @@ char *str_concat(char *s1, char *s2)
 {
 int len1 = strlen(s1);
 int len2 = strlen(s2);
-int total_size = (len1 + len2 + 1);
-
 char *ptr;
 int i;
+
 if (s1 == NULL)
 {
 s1 = "";
@@ -46,7 +45,7 @@ s2 = "";
 len2 = 0;
 }
 
-ptr = (char *)malloc(total_size );
+ptr = (char *)malloc(len1 + len2 +1 );
 if (ptr == NULL)
 return (NULL);
 
