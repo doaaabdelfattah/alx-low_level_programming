@@ -28,8 +28,7 @@ return (i);
 
 char *str_concat(char *s1, char *s2)
 {
-int len1 = strlen(s1);
-int len2 = strlen(s2);
+int len1, len2;
 char *ptr;
 int i, j;
 
@@ -42,6 +41,11 @@ if (s2 == NULL)
 {
 *s2 = '\0';
 len2 = 0;
+}
+else
+{
+    len1 = strlen(s1);
+    len2 = strlen(s2);
 }
 
 ptr = (char *)malloc(len1 + len2 + 1);

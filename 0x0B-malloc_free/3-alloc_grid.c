@@ -6,5 +6,5 @@
 
 int **alloc_grid(int width, int height)
 {
-    malloc(sizeof(int) * )
+    int **ptr = malloc(sizeof(int*) * 3 );
 }
