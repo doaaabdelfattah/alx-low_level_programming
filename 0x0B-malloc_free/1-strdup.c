@@ -36,6 +36,7 @@ ptr = (char *) malloc(size);
 if (str == NULL || ptr == NULL)
 {
 	return (NULL);
+	break;
 }
 
 else
