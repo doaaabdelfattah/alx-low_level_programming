@@ -49,10 +49,10 @@ ptr = (char *)malloc(total_size);
 if (ptr == NULL)
 return (NULL);
 
-for (i = 0; i < len1; i++)
+for (i = 0; i <= len1; i++)
 *(ptr + i) = *(s1 + i);
 
-for (i = 0; i < len2; i++)
+for (i = 0; i <= len2; i++)
 *(ptr + len1 + i) = *(s2 + i);
 
 *(ptr + total_size) = '\0';
