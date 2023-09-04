@@ -36,7 +36,7 @@ int i, j;
 if (s1 == NULL)
 {
 s1 = "";
-
+}
 if (s2 == NULL)
 {
 s2 = "";
@@ -54,4 +54,5 @@ ptr[len1 + j] = s2[j];
 
 return (ptr);
 }
-}
+
+
