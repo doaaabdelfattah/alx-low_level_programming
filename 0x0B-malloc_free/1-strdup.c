@@ -31,7 +31,7 @@ char *ptr;
 unsigned int i;
 unsigned int size = (_strlen(str) + 1);
 
-ptr = (char *) malloc(size);
+ptr = (char *) malloc(sizeof(int) * size);
 
 if (str == NULL || ptr == NULL)
 {
