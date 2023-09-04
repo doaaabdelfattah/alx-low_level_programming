@@ -33,12 +33,12 @@ char *str_concat(char *s1, char *s2)
 
     char *ptr;
     int i;
-    if (s1 == NULL)
+    if (*s1 == 0)
     {
         *s1 = '\0';
         len1 = 0;
     }
-    if (s2 == NULL)
+    if (*s2 == 0)
     {
         *s2 = '\0';
         len2 = 0;
