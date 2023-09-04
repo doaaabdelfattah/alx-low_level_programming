@@ -54,3 +54,4 @@ ptr[len1 + j] = s2[j];
 
 return (ptr);
 }
+}
