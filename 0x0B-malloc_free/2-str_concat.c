@@ -33,6 +33,11 @@ int total_size = (len1 + len2 + 1);
 
 char *ptr;
 int i;
+if (s1 == NULL)
+s1 = "";
+
+if (s2 == NULL)
+s2 = "";
 
 ptr = (char *)malloc(total_size);
 if (ptr == NULL)
