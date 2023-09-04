@@ -32,7 +32,7 @@ char *ptr;
 unsigned int i;
 
 unsigned int size = (_strlen(str) + 1);
-if (*str == 0)
+if (str == NULL)
 return (NULL);
 
 ptr = (char *) malloc(size);
