@@ -37,7 +37,10 @@ return (NULL);
 
 ptr = (char *) malloc(size);
 if (ptr == NULL)
-return (NULL);
+{
+    return (NULL);
+}
+
 else
 {
 for (i = 0; i < size; i++)
