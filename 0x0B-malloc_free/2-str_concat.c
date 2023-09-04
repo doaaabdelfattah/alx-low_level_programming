@@ -38,14 +38,6 @@ ptr = (char *)malloc(total_size);
 if (ptr == NULL)
 return (NULL);
 
-// if (s1 == NULL)
-// {
-// s1 = "";
-// }
-// if (s2 == NULL)
-// {
-// s2 = "";
-// }
 for (i = 0; i < len1; i++)
 {
 *(ptr + i) = *(s1 + i);
