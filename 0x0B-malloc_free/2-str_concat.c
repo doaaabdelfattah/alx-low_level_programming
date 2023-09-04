@@ -49,7 +49,7 @@ continue;
 for (len2 = 0; s2[len2] != '\0'; len2++)
 continue;
 
-ptr = (char *)malloc(sizeof(char) * (len1 + len2 + 1));
+ptr = (char *)malloc(len1 + len2 + 1);
 if (ptr == NULL)
 return (NULL);
 
