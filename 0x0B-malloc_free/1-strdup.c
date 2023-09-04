@@ -31,21 +31,19 @@ char *ptr;
 unsigned int i;
 
 unsigned int size = (_strlen(str) + 1);
-if (str == NULL)
-return (NULL);
-
 ptr = (char *) malloc(size);
-if (ptr == NULL)
+
+if (str == NULL || ptr == NULL)
 {
-    return (NULL);
+	return (NULL);
 }
 
 else
 {
-for (i = 0; i < size; i++)
-{
-*(ptr + i) = *(str + i);
-}
-return (ptr);
+	for (i = 0; i < size; i++)
+	{
+		*(ptr + i) = *(str + i);
+	}
+	return (ptr);
 }
 }
