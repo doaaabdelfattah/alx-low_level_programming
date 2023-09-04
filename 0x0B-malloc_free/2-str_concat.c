@@ -40,7 +40,7 @@ for(len2 = 0; s2[len2] != '\0'; len2++)
 continue;
 }
 
-else if (s2 == NULL)
+if (s2 == NULL)
 {
 *s2 = '\0';
 len2 = 0;
