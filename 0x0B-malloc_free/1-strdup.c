@@ -21,9 +21,8 @@ return (i);
 }
 
 /**
- * create_array -  creates an array of chars
- *@size: size of array
-*@c: character
+ * _strdup -  creates an array a copy of the string given as a parameter.
+ *@str: given array
 *Return: pointer to first string
 */
 char *_strdup(char *str)
