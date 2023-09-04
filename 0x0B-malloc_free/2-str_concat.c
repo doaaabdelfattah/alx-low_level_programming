@@ -44,8 +44,11 @@ len2 = 0;
 }
 else
 {
-    len1 = _strlen(s1);
-    len2 = _strlen(s2);
+for (len1 =0; s1[len1] != '\0'; len1++)
+continue;
+
+for(len2 = 0; s2[len2] != '\0'; len2++)
+continue;
 }
 
 ptr = (char *)malloc(len1 + len2 + 1);
