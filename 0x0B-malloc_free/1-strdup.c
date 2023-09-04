@@ -29,21 +29,21 @@ char *_strdup(char *str)
 {
 char *ptr;
 unsigned int i;
-
 unsigned int size = (_strlen(str) + 1);
+
 ptr = (char *) malloc(size);
 
 if (str == NULL || ptr == NULL)
 {
 	return (NULL);
 }
-
 else
 {
 	for (i = 0; i < size; i++)
 	{
 		*(ptr + i) = *(str + i);
 	}
+	*(ptr + size) = '\0';
 	return (ptr);
 }
 }
