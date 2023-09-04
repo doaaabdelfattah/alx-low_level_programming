@@ -45,7 +45,7 @@ s2 = "";
 len2 = 0;
 }
 
-ptr = (char *)malloc(total_size);
+ptr = (char *)malloc(total_size );
 if (ptr == NULL)
 return (NULL);
 
@@ -55,6 +55,5 @@ ptr[i] = s1[i];
 for (i = 0; i < len2; i++)
 ptr[len1 + i] = s2[i];
 
-ptr[len1 + len2] = '\0';
 return (ptr);
 }
