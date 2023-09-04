@@ -36,26 +36,20 @@ if (s1 == NULL)
 {
 *s1 = '\0';
 len1 = 0;
-for(len2 = 0; s2[len2] != '\0'; len2++)
-continue;
 }
 
-else if (s2 == NULL)
+if (s2 == NULL)
 {
 *s2 = '\0';
 len2 = 0;
-for (len1 = 0; s1[len1] != '\0'; len1++)
-continue;
 }
 
-else
-{
+
 for (len1 = 0; s1[len1] != '\0'; len1++)
 continue;
 
 for(len2 = 0; s2[len2] != '\0'; len2++)
 continue;
-}
 
 ptr = (char *)malloc(sizeof(char) * (len1 + len2 + 1));
 if (ptr == NULL)
