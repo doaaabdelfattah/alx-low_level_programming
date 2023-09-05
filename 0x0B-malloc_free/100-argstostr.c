@@ -9,13 +9,17 @@
 
 char *argstostr(int ac, char **av)
 {
-int i, j, len;
+int i, j, len, size = 0;
 char *array;
 
 if (ac == 0 || av == NULL)
 return (NULL);
 
-array = malloc((ac * sizeof(char)) + 1);
+for( i = 0; i < ac; i++)
+	for (j = 0; av[i][j]; j++)
+		size++;
+
+array = malloc(size + 1);
 if (array == NULL)
 return (NULL);
 
