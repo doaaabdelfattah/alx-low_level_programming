@@ -20,8 +20,16 @@ if (array == NULL)
 return (NULL);
 
 for (i = 0 ; i < width; i++)
+{
 array[i] = malloc(sizeof(int) * width);
+if (array[i] == NULL)
+{
+while (i--)
+free(array[i]);
+return (NULL);
+}
 
+}
 
 for (i = 0; i < height ; i++)
 {
@@ -29,7 +37,6 @@ for (j = 0; j < width; j++)
 array[i][j] = 0;
 }
 return (array);
-
 
 for (i = 0; i < height; i++)
 free(array[i]);
