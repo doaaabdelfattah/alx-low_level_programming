@@ -15,7 +15,7 @@ char *array;
 if (ac == 0 || av == NULL)
 return (NULL);
 
-array = malloc(ac + 1);
+array = malloc((ac * sizeof(char)) + 1);
 if (array == NULL)
 return (NULL);
 
