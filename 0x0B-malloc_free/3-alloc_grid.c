@@ -38,7 +38,7 @@ array[i][j] = 0;
 }
 return (array);
 
-for (i = 0; i < height; i++)
+for (i = 0; i < width; i++)
 free(array[i]);
 
 free(array);
