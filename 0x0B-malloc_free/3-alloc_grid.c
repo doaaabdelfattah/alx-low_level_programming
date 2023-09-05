@@ -39,7 +39,7 @@ array[i][j] = 0;
 
 return (array);
 
-for (i = 0; i < width; i++)
+for (i = 0; i < height; i++)
 free(array[i]);
 
 free(array);
