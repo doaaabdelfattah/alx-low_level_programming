@@ -19,7 +19,7 @@ array = malloc(sizeof(int *) * height);
 if (array == NULL)
 return (NULL);
 
-for (i = 0 ; i < width; i++)
+for (i = 0 ; i < height; i++)
 {
 array[i] =(int *) malloc(sizeof(int) * width);
 if (array[i] == NULL)
