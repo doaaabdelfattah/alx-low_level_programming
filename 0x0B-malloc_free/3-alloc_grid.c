@@ -22,6 +22,9 @@ return (NULL);
 for (i = 0 ; i < width; i++)
 array[i] = malloc(sizeof(int) * width);
 
+if (array[i] == NULL)
+return (NULL)
+
 for (i = 0; i < height ; i++)
 {
 for (j = 0; j < width; j++)
