@@ -9,32 +9,39 @@
 
 char *argstostr(int ac, char **av)
 {
-int i, j;
-char **array;
+int i, j, len;
+char *array;
 
-array = malloc(sizeof(char *) * ac);
+if (ac == 0 || av == NULL)
+return (NULL);
+
+array = malloc(ac + 1);
 if (array == NULL)
 return (NULL);
 
-for (i = 0 ; i < ac; i++)
-{
-array[i] = (char *)malloc(sizeof(av[i]));
-if (array[i] == NULL)
-{
-for (j = 0; j <= i; j++)
-{
-free(array[j]);
-}
-free(array);
-return (NULL);
-}
-}
+// for (i = 0 ; i < ac; i++)
+// {
+// array[i] = (char *)malloc(sizeof(av[i]));
+// if (array[i] == NULL)
+// {
+// for (j = 0; j <= i; j++)
+// {
+// free(array[j]);
+// }
+// free(array);
+// return (NULL);
+// }
+// }
 
+len = 0;
 for (i = 0; i < ac ; i++)
 {
-int size = sizeof(av[i]);
-for (j = 0; j < size; j++)
-array[i][j] = av[i][j];
+for (j = 0; av[i][j] != '\0'; j++)
+array[len++] = av[i][j];
+
+array[len++]= '\n';
 }
-return (array[0]);
+
+array[len++] = '\0';
+return (array);
 }
