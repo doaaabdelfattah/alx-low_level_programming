@@ -21,11 +21,13 @@ return (NULL);
 
 for (i = 0 ; i < height; i++)
 {
-array[i] =(int *) malloc(sizeof(int) * width);
+array[i] = (int *) malloc(sizeof(int) * width);
 if (array[i] == NULL)
 {
-for(j = 0; j <= i; j++)
-    free(array[j]);
+for (j = 0; j <= i; j++)
+{
+free(array[j]);
+}
 free(array);
 return (NULL);
 }
