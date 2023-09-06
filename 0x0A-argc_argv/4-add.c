@@ -55,6 +55,6 @@ for (i = 1; i < argc; i++)
 }
 
 printf("%d\n", count);
-return (0);
 }
+return (0);
 }
