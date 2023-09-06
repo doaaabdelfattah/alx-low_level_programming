@@ -10,7 +10,8 @@ int coun_words(char *str);
 
 int coun_words(char *str)
 {
-int words;
+int words, i;
+words = 0;
 for (i = 0; str[i] != '\0'; i++)
 if (str[i] == ' ')
 words++;
@@ -28,9 +29,9 @@ char **strtow(char *str)
 int i, j, q, words, total, len;
 char **array;
 
-words = coun_words(char *str);
+words = coun_words(str);
 
-if (str == NULL || str == "")
+if (str == NULL || *str == '\0')
 return (NULL);
 
 /* calculate the length of string and umber of words*/
