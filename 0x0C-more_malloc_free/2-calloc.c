@@ -15,10 +15,10 @@ if (nmemb == 0 || size == 0)
 ptr = malloc(sizeof(int) * size);
 if (ptr == NULL)
 	return (NULL);
-for (i = 0; i < size; i++)
+for (i = 0; i < nmemb; i++)
 {
-ptr = (int *)ptr + i;
-*(int *)ptr = 0;
+void *currentptr = (char *)ptr + (i * size);
+*(int *)currentptr = 0;
 }
 return (ptr);
 }
