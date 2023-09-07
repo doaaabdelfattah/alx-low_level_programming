@@ -43,6 +43,6 @@ ptr[i] = s1[i];
 for (j = 0; j < n && s2[j] != '\0'; j++)
 ptr[len1 + j] = s2[j];
 
-ptr[len1 + n + 1] = '\0';
+ptr[len1 + n] = '\0';
 return (ptr);
 }
