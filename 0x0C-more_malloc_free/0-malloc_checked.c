@@ -2,22 +2,21 @@
 #include <stdlib.h>
 #include <stdio.h>
 /**
- * create_array -  creates an array of chars
- *@size: size of array
-*@c: character
-*Return: pointer to first string
+ * malloc_checked -  allocates memory using malloc.
+ *@b: size
+*Return: void pointer
 */
 void *malloc_checked(unsigned int b)
 {
-    void *ptr;
+void *ptr;
 
 ptr = malloc(b);
 if (ptr == NULL)
 {
-exit (98);
+exit(98);
 }
 else
 {
-return(ptr);
+return (ptr);
 }
 }
