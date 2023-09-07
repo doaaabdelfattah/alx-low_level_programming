@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 /**
- * string_nconcat - concatenates two strings.
+ * string_nconcat - concatenates two strings
  *@s1: first string
  *@s2: second string
  *@n: number of bytes
@@ -33,7 +33,7 @@ continue;
 if (n < len2)
 len2 = n;
 
-ptr = (char *)malloc(len1 + len2 + 1);
+ptr = (char *)malloc(len1 + n + 1);
 if (ptr == NULL)
 return (NULL);
 
