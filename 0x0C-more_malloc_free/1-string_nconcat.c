@@ -23,8 +23,6 @@ if (s2 == NULL)
 {
 s2 = "";
 }
-if (n < 0)
-return (NULL);
 
 for (len1 = 0; s1[len1] != '\0'; len1++)
 continue;
