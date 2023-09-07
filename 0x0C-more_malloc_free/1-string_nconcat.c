@@ -30,8 +30,8 @@ continue;
 for (len2 = 0; s2[len2] != '\0'; len2++)
 continue;
 
-if (n < len2)
-len2 = n;
+if (n >= len2)
+n = len2;
 
 ptr = (char *)malloc(len1 + n + 1);
 if (ptr == NULL)
