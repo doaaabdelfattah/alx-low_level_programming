@@ -3,9 +3,11 @@
 #include <stdio.h>
 #include <string.h>
 /**
- *
- *
- *
+ *_realloc -  reallocates a memory block using malloc and free
+ *@ptr: old pointer
+ *@old_size: old size
+ *@new_size: new size
+ *Return: void pointer
  */
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
