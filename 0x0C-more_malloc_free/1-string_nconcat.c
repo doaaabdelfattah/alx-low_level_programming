@@ -40,9 +40,9 @@ return (NULL);
 for (i = 0; i < len1; i++)
 ptr[i] = s1[i];
 
-for (j = 0; j < len2; j++)
+for (j = 0; j < n; j++)
 ptr[len1 + j] = s2[j];
 
-ptr[len1 + len2 + 1] = '\0';
+ptr[len1 + n + 1] = '\0';
 return (ptr);
 }
