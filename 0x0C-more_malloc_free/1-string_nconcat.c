@@ -23,6 +23,8 @@ if (s2 == NULL)
 {
 s2 = "";
 }
+if (n < 0)
+return (NULL);
 
 for (len1 = 0; s1[len1] != '\0'; len1++)
 continue;
@@ -33,7 +35,7 @@ continue;
 if (n >= len2)
 n = len2;
 
-ptr = (char *)malloc(len1 + n + 1);
+ptr = (char *)malloc(sizeof(char) * (len1 + n + 1));
 if (ptr == NULL)
 return (NULL);
 
