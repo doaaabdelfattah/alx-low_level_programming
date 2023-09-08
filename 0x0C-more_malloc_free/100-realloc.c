@@ -16,9 +16,9 @@ void *newptr;
 if (new_size == 0 && ptr != NULL)
 {
 free(ptr);
-return (NULL):
+return (NULL);
 }
-else if(new_size == 0 && ptr = NULL)
+else if(new_size == 0 && !ptr)
 {
 free(ptr);
 return (NULL);
@@ -41,4 +41,3 @@ free(ptr);
 return (newptr);
 }
 }
-
