@@ -26,6 +26,7 @@ if (ptr->name == NULL || ptr->owner == NULL)
 {
 free(ptr->name);
 free(ptr->owner);
+free(ptr);
 return (NULL);
 }
 strcpy(ptr->name, name);
@@ -33,5 +34,4 @@ strcpy(ptr->owner, owner);
 ptr->age = age;
 
 return (ptr);
-
 }
