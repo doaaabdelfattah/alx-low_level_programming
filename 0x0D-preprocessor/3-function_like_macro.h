@@ -2,7 +2,7 @@
 #define function_like_macro_h
 
 /**
- * ABS - function like macro
+ * abs - function like macro
  * @x: input
  */
 

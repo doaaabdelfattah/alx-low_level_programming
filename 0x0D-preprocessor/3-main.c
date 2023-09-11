@@ -1,6 +1,5 @@
 #include <stdio.h>
-#define ABS(x) (x > 0 ? (x) : (-x))
-
+#include "3-function_like_macro.h"
 /**
  * main - check the code
  *
