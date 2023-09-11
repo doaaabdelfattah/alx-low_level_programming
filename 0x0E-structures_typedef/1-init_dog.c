@@ -18,4 +18,6 @@ d->age = age;
 if (d->owner != NULL)
 d->owner = owner;
 }
+else
+return;
 }
