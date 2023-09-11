@@ -1,6 +1,5 @@
 #include <stdio.h>
-#define SUM(x, y) (x+y)
-
+#include "4-sum.h"
 /**
  * main - check the code
  *
