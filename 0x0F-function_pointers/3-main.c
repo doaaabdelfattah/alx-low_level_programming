@@ -23,7 +23,7 @@ operator = argv[2];
 if (argv[2][1] != '\0')
 {
 printf("Error\n");
-exit (99);
+exit(99);
 }
 if ((strcmp(operator, "/") && num2 == 0)
 || (strcmp(operator, "%") && num2 == 0))
