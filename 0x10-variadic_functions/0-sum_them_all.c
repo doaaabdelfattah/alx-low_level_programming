@@ -17,6 +17,8 @@ i = 0;
 sum = 0;
 for (i = 0; i < n; i++)
 sum += va_arg(sumptr, int);
+va_end(sumptr);
 return (sum);
+
 }
 
