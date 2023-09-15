@@ -12,7 +12,7 @@ char *str;
 va_list input;
 va_start(input, format);
 i = 0;
-while (format[i] != '\0')
+while (format != NULL && format[i] != '\0')
 {
 if (flag == 1 && (format[i] == 'c' ||
 	format[i] == 's' || format[i] == 'i' || format[i] == 'f'))
