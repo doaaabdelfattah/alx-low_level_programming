@@ -12,15 +12,12 @@ listint_t *new_node, *tmp, *prev;
 unsigned int i;
 if (*head == NULL)
 	return (NULL);
-
 new_node = malloc(sizeof(listint_t));
 if (new_node == NULL)
 	return (NULL);
-
 new_node->n = n;
-
 tmp = prev = *head;
-for (i = 0; i < idx && tmp != NULL; i++)
+for (i = 1; i < idx && tmp != NULL; i++)
 {
 	prev = tmp;
 	tmp = tmp->next;
