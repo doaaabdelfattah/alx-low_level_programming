@@ -26,8 +26,11 @@ for (i = 0; i < idx && tmp != NULL; i++)
 	tmp = tmp->next;
 }
 if (i < idx || tmp == NULL)
+{
+	free(new_node);
 	return (NULL);
+}
 prev->next = new_node;
-new_node->next = tmp->next;
+new_node->next = tmp;
 return (new_node);
 }
