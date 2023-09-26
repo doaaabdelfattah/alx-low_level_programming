@@ -17,7 +17,7 @@ if (new_node == NULL)
 	return (NULL);
 new_node->n = n;
 tmp = prev = *head;
-for (i = 1; i < idx && tmp != NULL; i++)
+for (i = 0; i < idx - 1 && tmp != NULL; i++)
 {
 	prev = tmp;
 	tmp = tmp->next;
