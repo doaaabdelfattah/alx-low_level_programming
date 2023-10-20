@@ -11,10 +11,12 @@ ssize_t read_textfile(const char *filename, size_t letters)
 int r_value, o_value, printed;
 char *buffer;
 
+if (filename == NULL)
+return (0);
+
 buffer = malloc(sizeof(char) * letters);
 if (buffer == NULL)
 return (0);
-
 
 /* OPEN THE FILE */
 o_value = open(filename, O_RDONLY); /* Return File discrptor */
