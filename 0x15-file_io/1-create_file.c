@@ -30,8 +30,9 @@ int o_value, w_value;
 if (filename == NULL)
 return (-1);
 
-/* OPEN THE FILE */
-o_value = open(filename, O_RDWR | O_TRUNC, 0);
+/* OPEN THE FILE - Create new - Trunc the existing 
+with file permission read and write */
+o_value = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
 /* Return File discrptor */
 
 /* READ THE FILE */
