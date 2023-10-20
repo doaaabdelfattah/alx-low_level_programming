@@ -17,8 +17,8 @@ while (result > 0)
 if ((result & 1) > 0)
 {
 count++;
-result = result >> 1;
 }
+result = result >> 1;
 }
 return (count);
 }
