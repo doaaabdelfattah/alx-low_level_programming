@@ -1,20 +1,20 @@
 #include "main.h"
 /**
- * _strlen - function that returns the length of a string
- * @s : string
- *
- * Return: lenght of string
- */
+* _strlen - function that returns the length of a string
+* @s : string
+*
+* Return: lenght of string
+*/
 
 int _strlen(char *s)
 {
-	int i = 0;
+int i = 0;
 
-	while (s[i] != '\0')
-	{
-		i++;
-	}
-	return (i);
+while (s[i] != '\0')
+{
+i++;
+}
+return (i);
 }
 
 /**
@@ -32,7 +32,15 @@ return (-1);
 
 for (len = 0; text_content[len] != '\0'; len++)
 continue;
-
+/* Ctreate empty file */
+if (text_content == NULL)
+{
+o_value = open(filename, O_CREAT, 0600);
+if (o_value == -1)
+return (-1);
+close(o_value);
+return (1);
+}
 
 /* OPEN THE FILE - Create new - Trunc the existing */
 /* with file permission read and write */
