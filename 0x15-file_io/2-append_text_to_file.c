@@ -21,9 +21,10 @@ o_value = open(filename, O_WRONLY | O_APPEND);
 
 if (text_content == NULL)
 {
-if (o_value)
-return (1);
-else
+{
+    close (o_value);
+    return (1);
+}
 return (-1);
 }
 /* READ THE FILE */
