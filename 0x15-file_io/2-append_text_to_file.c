@@ -21,8 +21,13 @@ o_value = open(filename, O_WRONLY | O_APPEND);
 
 if (text_content == NULL)
 {
+if (o_value > 0)
+{
 close(o_value);
 return (1);
+}
+if (o_value == -1)
+return (-1);
 }
 /* READ THE FILE */
 w_value = write(o_value, text_content, len);
