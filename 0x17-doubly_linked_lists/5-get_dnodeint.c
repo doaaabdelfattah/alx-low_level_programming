@@ -12,9 +12,15 @@ unsigned int i;
 if (head == NULL)
 return (NULL);
 ptr = head;
-for (i = 0; i < index; i++)
+for (i = 0; i < index && ptr != NULL; i++)
 {
 ptr = ptr->next;
+}
+/* Check if the loop terminated because of reaching the end of the list */
+/* without finding the specified index. */
+if (i < index)
+{
+return (NULL);
 }
 return (ptr);
 }
