@@ -25,19 +25,18 @@ new_node->n = n;
 ptr = *h;
 /* Iterate through nodes */
 for (i = 1; i < idx && ptr != NULL; i++)
-{
 ptr = ptr->next;
-}
 /* Check if the index is out of bounds */
 if (ptr == NULL)
 {
 free(new_node);
 return (NULL);
 }
+if (ptr->next == NULL)
+return (add_dnodeint_end(h, n));
 /* Fill the new node with both addressess (Prev & next)*/
 new_node->prev = ptr;
 new_node->next = ptr->next;
-
 /* Update the old nodes: 1) the left */
 ptr->next = new_node;
 /* Update the old nodes: 2) the right */
