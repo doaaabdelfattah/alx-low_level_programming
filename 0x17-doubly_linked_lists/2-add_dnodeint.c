@@ -16,6 +16,8 @@ new_node->n = n;
 /* Connect both sides */
 new_node->next = *head;
 new_node->prev = NULL;
+/* checks if there was an existing head */
+/* update the previous pointer of first old node */
 if (*head != NULL)
 (*head)->prev = new_node;
 
