@@ -4,7 +4,7 @@
  * @head: head of the node
  * @index: index of the node
  * Return: pointer to the nth node
-*/
+ */
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 {
 dlistint_t *ptr;
