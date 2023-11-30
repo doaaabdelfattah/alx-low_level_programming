@@ -18,7 +18,7 @@ return (NULL);
 }
 table_ptr->size = size;
 table_ptr->array = malloc(sizeof(hash_node_t *) * size);
-if (table_ptr == NULL)
+if (table_ptr->array == NULL)
 {
 return (NULL);
 }
