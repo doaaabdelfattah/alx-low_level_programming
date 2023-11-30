@@ -1,5 +1,5 @@
-#ifndef main_h
-#define main_h
+#ifndef hashtable_h
+#define hashtable_h
 #include <unistd.h>
 #include <stdlib.h>
 
