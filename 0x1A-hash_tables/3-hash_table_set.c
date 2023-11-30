@@ -9,35 +9,61 @@
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 hash_node_t *new_node;
-hash_node_t *tmp;
-int index;
+unsigned long int index;
 
+/* Compute the index */
 index = key_index((unsigned char *)key, ht->size);
+/* Check if the key already exists */
+
+if (ht->array[index] != NULL && strcmp(ht->array[index]->key, key) == 0)
+{
+    /* free existing value */
+    free(ht->array[index]->value);
+    /* duplicate at assign it to the node */
+    ht->array[index]->value = strdup(value);
+    if (ht->array[index]->value == NULL)
+    {
+        return (0);
+    }
+    return (1);
+}
+
+/* Create the node of new element */
 new_node = malloc(sizeof(hash_node_t));
 if (new_node == NULL)
 {
 return (0);
 }
-new_node->value = strdup(value);
-new_node->key = strdup(key);
 
-/* If No collision */
+/* Duplicate key & value */
+new_node->key = strdup(key);
+new_node->value = strdup(value);
+new_node->next = NULL;
+
+if (new_node->key == NULL || new_node->value == NULL)
+{
+    free(new_node->key);
+    free(new_node->value);
+    free(new_node);
+    return (0);
+}
+
+/*  CASE I: If No collision */
 if (ht->array[index] == NULL)
 {
 ht->array[index] = new_node;
-new_node->next = NULL;
 }
-/* In case of Collision, add at the beginning */
+/* CASE II: if Collision, add at the beginning */
 else
 {
-tmp = ht->array[index];
+new_node->next = ht->array[index];
 ht->array[index] = new_node;
-new_node->next = tmp;
 
-/* Free the memory of the previous node */
+/* Free the memory of the previous node 
 free(tmp->key);
 free(tmp->value);
 free(tmp);
+*/
 }
 return (1);
 }
