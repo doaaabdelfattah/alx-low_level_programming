@@ -13,7 +13,7 @@ return (NULL);
 table_ptr = (hash_table_t *)malloc(sizeof(hash_table_t));
 if (table_ptr == NULL)
 {
-    return (NULL);
+return (NULL);
 }
 table_ptr->size = size;
 table_ptr->array = (hash_node_t **)calloc(size, sizeof(hash_node_t *));
