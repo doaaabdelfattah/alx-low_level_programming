@@ -17,6 +17,9 @@ return (NULL);
 }
 table_ptr->size = size;
 table_ptr->array = (hash_node_t **)calloc(size, sizeof(hash_node_t *));
-
+if (table_ptr == NULL)
+{
+return (NULL);
+}
 return (table_ptr);
 }
