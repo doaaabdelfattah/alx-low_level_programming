@@ -10,11 +10,9 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 hash_node_t *new_node;
 unsigned long int index;
-
 /* Compute the index */
 index = key_index((unsigned char *)key, ht->size);
 /* Check if the key already exists */
-
 if (ht->array[index] != NULL && strcmp(ht->array[index]->key, key) == 0)
 {
     /* free existing value */
@@ -27,19 +25,16 @@ if (ht->array[index] != NULL && strcmp(ht->array[index]->key, key) == 0)
     }
     return (1);
 }
-
 /* Create the node of new element */
 new_node = malloc(sizeof(hash_node_t));
 if (new_node == NULL)
 {
 return (0);
 }
-
 /* Duplicate key & value */
 new_node->key = strdup(key);
 new_node->value = strdup(value);
 new_node->next = NULL;
-
 if (new_node->key == NULL || new_node->value == NULL)
 {
     free(new_node->key);
@@ -47,7 +42,6 @@ if (new_node->key == NULL || new_node->value == NULL)
     free(new_node);
     return (0);
 }
-
 /*  CASE I: If No collision */
 if (ht->array[index] == NULL)
 {
@@ -59,11 +53,6 @@ else
 new_node->next = ht->array[index];
 ht->array[index] = new_node;
 
-/* Free the memory of the previous node 
-free(tmp->key);
-free(tmp->value);
-free(tmp);
-*/
 }
 return (1);
 }

@@ -5,20 +5,18 @@
  * @key: key
  * Return: value
 */
-
-
 char *hash_table_get(const hash_table_t *ht, const char *key)
 {
 int index;
 hash_node_t *node;
-index = key_index(key, ht->size);
+index = key_index((unsigned char *)key, ht->size);
 node = ht->array[index];
 
-if (node == NULL)
-return (NULL);
-else
+while (node != NULL)
 {
-    if (strcmp(node->key, key) == 0)
-        return (node->value);
+if (strcmp(node->key, key) == 0)
+return (node->value);
+node = node->next;
 }
+return (NULL);
 }
